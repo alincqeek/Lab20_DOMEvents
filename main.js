@@ -54,7 +54,7 @@ form.addEventListener("submit", (event) => {
         result.textContent = "Ошибка: Имя не может быть пустым!";
         result.style.color = "red";
         usernameInput.focus();
-        return
+        return;
 
     }
     if (isNaN(age) || age <= 0 || age > 120) {
